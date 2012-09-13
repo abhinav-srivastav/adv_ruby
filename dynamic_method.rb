@@ -20,6 +20,4 @@ Dynamic_method.instance_methods(false).each do |func|
   puts "#{func}(##{args} string args)"
 end
 input = "obj."+gets.chomp
-Dynamic_method.instance_eval do
- puts eval(input)  
-end
+puts eval(input)  
